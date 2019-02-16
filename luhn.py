@@ -3,8 +3,6 @@ class Luhn(object):
         self.card_num = card_num
 
     def is_valid(self):
-        #self.card_num. = ''.join([c for c in self.card_num if c.isdigit()])
-
         num_list = list(self.card_num.replace(' ',''))
         for n in num_list:
             if n.isdigit():
