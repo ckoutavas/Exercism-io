@@ -23,7 +23,6 @@ class Luhn(object):
                 l.append(n)
         
         total = sum(num[-1::-2]) + sum(l)
-        print(total)
 
         if total %10 == 0:
             return True
