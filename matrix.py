@@ -6,7 +6,6 @@ class Matrix(object):
         m = [list(map(int, x.replace(' ', ',').split(','))) for x in self.matrix_string.split('\n')]
         return m[index-1]
         
-
     def column(self, index):
         m = [list(map(int, x.replace(' ', ',').split(','))) for x in self.matrix_string.split('\n')]
         return [m[r][index-1] for r in range(len(m))]
